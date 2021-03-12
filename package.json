@@ -1,15 +1,16 @@
 {
-  "name": "typescript-express",
+  "name": "test-jest",
   "version": "1.0.0",
-  "description": "Example project for how to use typescript with express",
+  "description": "Example project to learn how to use jest with typescript and express",
   "main": "dist/main.js",
+  "private": "true",
   "scripts": {
     "compile": "npx tsc",
     "start": "npm run compile && node ./dist/main.js",
     "start-dev": "node ./node_modules/nodemon/bin/nodemon.js -e ts --exec \"npm run start\"",
     "lint": "npx tslint --project tsconfig.json --config tslint.json",
     "test": "jest",
-    "test-with-coverage": "jest --coverage"
+    "test:coverage": "jest --coverage"
   },
   "keywords": [
     "typescript",
@@ -17,7 +18,7 @@
     "jest",
     "tslint"
   ],
-  "author": "Lex Ned",
+  "author": "yannnick.baudraz@cpnv.ch",
   "license": "MIT",
   "dependencies": {
     "body-parser": "^1.19.0",
